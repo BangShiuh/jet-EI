@@ -1,8 +1,9 @@
 import pandas as pd
 
 # load data
-df_nvPM = pd.read_excel('edb-emissions-databank_v28c_web.xlsx', sheet_name='nvPM Emissions')
-df_gas = pd.read_excel('edb-emissions-databank_v28c_web.xlsx', sheet_name='Gaseous Emissions and Smoke')
+url = "https://www.easa.europa.eu/downloads/131424/en"
+df_nvPM = pd.read_excel(url, sheet_name='nvPM Emissions')
+df_gas = pd.read_excel(url, sheet_name='Gaseous Emissions and Smoke')
 
 # LEAP1A
 # Indices for gas sheet
